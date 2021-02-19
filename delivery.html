@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <!-- Настройка viewport -->
+    <title>Everest</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header header__page">
+    <div class="container">
+        <div class="header__wrapper">
+            <div class="header__mobile-btns">
+                <button class="header__burger">
+                    <span></span>
+                </button>
+                <div class="header__mobile mobile">
+                    <svg>
+                        <use xlink:href='img/svg/sprite.svg#mobile'></use>
+                    </svg>
+                    <div class="mobile__dropdown">
+                        <a href="tel:+380958045102">+38 (095) - 80 - 45 - 102</a>
+                        <a href="tel:+380682204208">+38 (068) - 22 - 04 - 208</a>
+                    </div>
+                </div>
+            </div>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/decorations/logo-black.png" alt="Logo">
+                </a>
+            </div> 
+            <nav class="header__nav">
+                <ul class="header__list">
+                    <li class="header__item header__item_drop">
+                        <a class="header__link" href="catalog.php">Каталог</a>
+                        <ul class="catalog-drop">
+                            <li class="catalog-drop__item">
+                                <a class="catalog-drop__link"
+                                    href="<?php $_SERVER['SCRIPT_NAME']?>?category=vegetables">Овощи, зелень</a>
+                            </li>
+                            <li class="catalog-drop__item catalog-drop__item_hovered">
+                                <a class="catalog-drop__link"
+                                    href="<?php $_SERVER['SCRIPT_NAME']?>?category=fruits-nuts">
+                                    Фрукты, орехи
+                                    <svg>
+                                        <use xlink:href='img/svg/sprite.svg#right-arrow'></use>
+                                    </svg>
+                                </a>
+                                <ul class="catalog-drop__drop-list drop-list">
+                                    <li class="drop-list__item drop-list__item_all">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=fruits-nuts">Показать все
+                                            товары</a>
+                                    </li>
+                                    <li class="drop-list__item">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=fruits-nuts&subcategory=fruits">Фрукты</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=fruits-nuts&subcategory=berries">Ягоды</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=fruits-nuts&subcategory=dried">Сухофрукты</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=fruits-nuts&subcategory=nuts">Орехи</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="catalog-drop__item">
+                                <a class="catalog-drop__link"
+                                    href="<?php $_SERVER['SCRIPT_NAME']?>?category=bread">Хлеб</a>
+                            </li>
+                            <li class="catalog-drop__item catalog-drop__item_hovered">
+                                <a class="catalog-drop__link" href="<?php $_SERVER['SCRIPT_NAME']?>?category=grocery">
+                                    Бакалея
+                                    <svg>
+                                        <use xlink:href='img/svg/sprite.svg#right-arrow'></use>
+                                    </svg>
+                                </a>
+                                <ul class="catalog-drop__drop-list drop-list">
+                                    <li class="drop-list__item drop-list__item_all">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=grocery">Показать все
+                                            товары</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=grocery&subcategory=flour">Мука</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=grocery&subcategory=pasta">Макароны
+                                        </a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=grocery&subcategory=flake">Хлопья</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=grocery&subcategory=flake500">Хлопья
+                                            500 гр</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=grocery&subcategory=flake800">Хлопья
+                                            800 гр</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="catalog-drop__item catalog-drop__item_hovered">
+                                <a class="catalog-drop__link" href="<?php $_SERVER['SCRIPT_NAME']?>?category=crops">
+                                    Крупы
+                                    <svg>
+                                        <use xlink:href='img/svg/sprite.svg#right-arrow'></use>
+                                    </svg>
+                                </a>
+                                <ul class="catalog-drop__drop-list drop-list">
+                                    <li class="drop-list__item drop-list__item_all">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=crops">Показать все
+                                            товары</a>
+                                    </li>
+                                    <li class="drop-list__item">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=crops&subcategory=cropsweight">Крупа
+                                            весовая</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=crops&subcategory=bulgur">Булгур</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=crops&subcategory=buckwheat">Гречневая
+                                            и гороховая</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=crops&subcategory=rice">Рисовая</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=crops&subcategory=cropsanother">Крупа
+                                            остальная</a>
+                                    </li>
+                                </ul>
+
+                            </li>
+                            <li class="catalog-drop__item catalog-drop__item_hovered">
+                                <a class="catalog-drop__link" href="<?php $_SERVER['SCRIPT_NAME']?>?category=meat">
+                                    Мясо и колбаса
+                                    <svg>
+                                        <use xlink:href='img/svg/sprite.svg#right-arrow'></use>
+                                    </svg>
+                                </a>
+                                <ul class="catalog-drop__drop-list drop-list">
+                                    <li class="drop-list__item drop-list__item_all">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=meat">Показать все товары</a>
+                                    </li>
+                                    <li class="drop-list__item">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=meat&subcategory=fresh">Свежина</a>
+                                    </li>
+                                    <li class="drop-list__item">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=meat&subcategory=meatfrozen">Мясо
+                                            свежеморожённое</a>
+                                    </li>
+                                    <li class="drop-list__item">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=meat&subcategory=meatall">Мясные
+                                            изделия</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=meat&subcategory=sausage">Сосиски
+                                            и сардельки</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=meat&subcategory=sausageboiled">Колбаса
+                                            варёная</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=meat&subcategory=sausagesmoked">Колбаса
+                                            полукопчёная</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=meat&subcategory=sausageuncooked">Колбаса
+                                            сырокопчёная</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=meat&subcategory=pate">Паштеты</a>
+                                    </li>
+                                </ul>
+
+                            </li>
+                            <li class="catalog-drop__item catalog-drop__item_hovered">
+                                <a class="catalog-drop__link" href="<?php $_SERVER['SCRIPT_NAME']?>?category=dairy">
+                                    Молочные продукты
+                                    <svg>
+                                        <use xlink:href='img/svg/sprite.svg#right-arrow'></use>
+                                    </svg>
+                                </a>
+                                <ul class="catalog-drop__drop-list drop-list">
+                                    <li class="drop-list__item drop-list__item_all">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=dairy">Показать все
+                                            товары</a>
+                                    </li>
+                                    <li class="drop-list__item">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=dairy&subcategory=milk">Молоко</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=dairy&subcategory=cream">Сливки</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=dairy&subcategory=butter">Масла
+                                            сливочные</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=dairy&subcategory=sourcream">Cметана</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=dairy&subcategory=kefir">Кефир</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=dairy&subcategory=yoghurtdrink">Йогурт
+                                            питьевой</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=dairy&subcategory=yoghurt">Йогурт
+                                            густой</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=dairy&subcategory=curd">Творог</a>
+                                    </li>
+                                </ul>
+
+                            </li>
+                            <li class="catalog-drop__item catalog-drop__item_hovered">
+                                <a class="catalog-drop__link" href="<?php $_SERVER['SCRIPT_NAME']?>?category=cheese">
+                                    Сыры
+                                    <svg>
+                                        <use xlink:href='img/svg/sprite.svg#right-arrow'></use>
+                                    </svg>
+                                </a>
+                                <ul class="catalog-drop__drop-list drop-list">
+                                    <li class="drop-list__item drop-list__item_all">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=cheese">Показать все
+                                            товары</a>
+                                    </li>
+                                    <li class="drop-list__item">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=cheese&subcategory=solid">Сыр
+                                            твёрдый</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=cheese&subcategory=fused">Сыр
+                                            плавленый</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=cheese&subcategory=packaging">Сыры
+                                            в упаковке</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="catalog-drop__item catalog-drop__item_hovered">
+                                <a class="catalog-drop__link" href="<?php $_SERVER['SCRIPT_NAME']?>?category=eggs">
+                                    Яйца
+                                    <svg>
+                                        <use xlink:href='img/svg/sprite.svg#right-arrow'></use>
+                                    </svg>
+                                </a>
+                                <ul class="catalog-drop__drop-list drop-list">
+                                    <li class="drop-list__item drop-list__item_all">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=eggs">Показать все товары</a>
+                                    </li>
+                                    <li class="drop-list__item">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=eggs&subcategory=quail">Яйца
+                                            перепелиные</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=eggs&subcategory=chicken">Яйца
+                                            куринные</a>
+                                    </li>
+                                </ul>
+
+                            </li>
+                            <li class="catalog-drop__item catalog-drop__item_hovered">
+                                <a class="catalog-drop__link" href="<?php $_SERVER['SCRIPT_NAME']?>?category=oil">
+                                    Масла растительные
+                                    <svg>
+                                        <use xlink:href='img/svg/sprite.svg#right-arrow'></use>
+                                    </svg>
+                                </a>
+                                <ul class="catalog-drop__drop-list drop-list">
+                                    <li class="drop-list__item drop-list__item_all">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=oil">Показать все товары</a>
+                                    </li>
+                                    <li class="drop-list__item">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=oil&subcategory=refined">Подсолнечное
+                                            рафинированое</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=oil&subcategory=unrefined">Подсолнечное
+                                            нерафинированое</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=oil&subcategory=olive">Оливковое</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=oil&subcategory=pumpkin">Тыквенное</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=oil&subcategory=linen">Льняное</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=oil&subcategory=corn">Кукурузное</a>
+                                    </li>
+                                </ul>
+
+                            </li>
+                            <li class="catalog-drop__item catalog-drop__item_hovered">
+                                <a class="catalog-drop__link" href="<?php $_SERVER['SCRIPT_NAME']?>?category=sauces">
+                                    Соусы,заправки
+                                    <svg>
+                                        <use xlink:href='img/svg/sprite.svg#right-arrow'></use>
+                                    </svg>
+                                </a>
+                                <ul class="catalog-drop__drop-list drop-list">
+                                    <li class="drop-list__item drop-list__item_all">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=sauces">Показать все
+                                            товары</a>
+                                    </li>
+                                    <li class="drop-list__item">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=sauces&subcategory=sauce">Соусы</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=sauces&subcategory=ketchup">Кетчупы</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=sauces&subcategory=mayo">Майонез</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=sauces&subcategory=mustard">Горчица</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=sauces&subcategory=tomato">Томатная
+                                            паста</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=sauces&subcategory=marinade">Маринады</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=sauces&subcategory=fill">Заправки</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=sauces&subcategory=soy">Соевые
+                                            соусы</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=sauces&subcategory=radish">Хрен</a>
+                                    </li>
+                                </ul>
+
+                            </li>
+                            <li class="catalog-drop__item catalog-drop__item_hovered">
+                                <a class="catalog-drop__link"
+                                    href="<?php $_SERVER['SCRIPT_NAME']?>?category=conservation">
+                                    Консервация
+                                    <svg>
+                                        <use xlink:href='img/svg/sprite.svg#right-arrow'></use>
+                                    </svg>
+                                </a>
+                                <ul class="catalog-drop__drop-list drop-list">
+                                    <li class="drop-list__item drop-list__item_all">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=conservation">Показать все
+                                            товары</a>
+                                    </li>
+                                    <li class="drop-list__item">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=conservation&subcategory=adjika">Аджика</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=conservation&subcategory=peas">Горошек
+                                            и кукуруза</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=conservation&subcategory=mushroom">Грибы</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=conservation&subcategory=olives">Оливки
+                                            и маслины</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=conservation&subcategory=squash">Икра
+                                            кабачковая и фасоль</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=conservation&subcategory=tomato">Огурцы
+                                            и томаты</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=conservation&subcategory=pickles">Соления</a>
+                                    </li>
+                                </ul>
+
+                            </li>
+                            <li class="catalog-drop__item catalog-drop__item_hovered">
+                                <a class="catalog-drop__link" href="<?php $_SERVER['SCRIPT_NAME']?>?category=fish">
+                                    Рыба и рыбные изделия
+                                    <svg>
+                                        <use xlink:href='img/svg/sprite.svg#right-arrow'></use>
+                                    </svg>
+                                </a>
+                                <ul class="catalog-drop__drop-list drop-list">
+                                    <li class="drop-list__item drop-list__item_all">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=fish">Показать все товары</a>
+                                    </li>
+                                    <li class="drop-list__item">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=fish&subcategory=smoked">Рыба
+                                            копчёная</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=fish&subcategory=fresh">Рыба
+                                            свежемороженая</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=fish&subcategory=canned">Рыбные
+                                            консервы</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=fish&subcategory=preserve">Рыбные
+                                            пресервы</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=fish&subcategory=roe">Икра</a>
+                                    </li>
+                                </ul>
+
+                            </li>
+                            <li class="catalog-drop__item catalog-drop__item_hovered">
+                                <a class="catalog-drop__link" href="<?php $_SERVER['SCRIPT_NAME']?>?category=hotdrinks">
+                                    Кофе, Чай
+                                    <svg>
+                                        <use xlink:href='img/svg/sprite.svg#right-arrow'></use>
+                                    </svg>
+                                </a>
+                                <ul class="catalog-drop__drop-list drop-list">
+                                    <li class="drop-list__item drop-list__item_all">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=hotdrinks">Показать все
+                                            товары</a>
+                                    </li>
+                                    <li class="drop-list__item">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=hotdrinks&subcategory=coffee">Кофе</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=hotdrinks&subcategory=tea">Чай</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=hotdrinks&subcategory=another">Остальные
+                                            напитки</a>
+                                    </li>
+                                </ul>
+
+                            </li>
+                            <li class="catalog-drop__item catalog-drop__item_hovered">
+                                <a class="catalog-drop__link" href="<?php $_SERVER['SCRIPT_NAME']?>?category=drinks">
+                                    Вода,напитки,соки
+                                    <svg>
+                                        <use xlink:href='img/svg/sprite.svg#right-arrow'></use>
+                                    </svg>
+                                </a>
+                                <ul class="catalog-drop__drop-list drop-list">
+                                    <li class="drop-list__item drop-list__item_all">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=drinks">Показать все
+                                            товары</a>
+                                    </li>
+                                    <li class="drop-list__item">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=drinks&subcategory=water">Вода</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=drinks&subcategory=drink">Напитки</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=drinks&subcategory=juice">Соки</a>
+                                    </li>
+                                </ul>
+
+                            </li>
+                            <li class="catalog-drop__item catalog-drop__item_hovered">
+                                <a class="catalog-drop__link" href="<?php $_SERVER['SCRIPT_NAME']?>?category=spice">
+                                    Специи,приправы
+                                    <svg>
+                                        <use xlink:href='img/svg/sprite.svg#right-arrow'></use>
+                                    </svg>
+                                </a>
+                                <ul class="catalog-drop__drop-list drop-list">
+                                    <li class="drop-list__item drop-list__item_all">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=spice">Показать все
+                                            товары</a>
+                                    </li>
+                                    <li class="drop-list__item">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=spice&subcategory=pepper">Перцы</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=spice&subcategory=green">Зелень
+                                            и травы</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=spice&subcategory=spices">Специи</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=spice&subcategory=condiment">Приправы</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=spice&subcategory=salt">Приправы
+                                            без соли</a>
+                                    </li>
+                                </ul>
+
+                            </li>
+                            <li class="catalog-drop__item">
+                                <a class="catalog-drop__link" href="<?php $_SERVER['SCRIPT_NAME']?>?category=culinary">
+                                    Кулинарные добавки
+                                </a>
+                            </li>
+                            <li class="catalog-drop__item catalog-drop__item_hovered">
+                                <a class="catalog-drop__link" href="<?php $_SERVER['SCRIPT_NAME']?>?category=bakery">
+                                    Кондитерские изделия
+                                    <svg>
+                                        <use xlink:href='img/svg/sprite.svg#right-arrow'></use>
+                                    </svg>
+                                </a>
+                                <ul class="catalog-drop__drop-list drop-list">
+                                    <li class="drop-list__item drop-list__item_all">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=bakery">Показать все
+                                            товары</a>
+                                    </li>
+                                    <li class="drop-list__item">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=bakery&subcategory=сandy">Конфеты</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=bakery&subcategory=biscuit">Печенье</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=bakery&subcategory=chocolate">Шоколад</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=bakery&subcategory=condensed">Сгущённое
+                                            молоко</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=bakery&subcategory=another">Остальное</a>
+                                    </li>
+                                </ul>
+
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="header__item"><a href="#contacts" class="header__link">Контакты</a></li>
+                    <li class="header__item"><a href="delivery.html" class="header__link">Доставка и оплата</a></li>
+                </ul>
+            </nav>
+            <div class="header__phones">
+                <div class="header__phone">
+                    <a href="tel:+380958045102">+38 (095) - 80 - 45 - 102</a>
+                </div>
+                <div class="header__phone-dropdown">
+                    <a href="tel:+380682204208">+38 (068) - 22 - 04 - 208</a>
+                </div>
+            </div>
+            <div class="header__icons">
+                <div class="header__mobile mobile">
+                    <svg>
+                        <use xlink:href='img/svg/sprite.svg#mobile'></use>
+                    </svg>
+                    <div class="mobile__dropdown">
+                        <a href="tel:+380958045102">+38 (095) - 80 - 45 - 102</a>
+                        <a href="tel:+380682204208">+38 (068) - 22 - 04 - 208</a>
+                    </div>
+                </div>
+                <form class="header__search">
+                    <input class="header__input" type="text" name="search" placeholder="Поиск...">
+                    <svg>
+                        <use xlink:href='img/svg/sprite.svg#search'></use>
+                    </svg>
+                </form>
+                <div class="header__cart">
+                    <svg>
+                        <use xlink:href='img/svg/sprite.svg#cart'></use>
+                    </svg>
+                    <span class="header__cart-counter">0</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+        <!-- _______________________Основа сайта_______________________ -->
+        <main>
+            <section class="delivery">
+    <div class="container">
+        <h2 class="title">
+            Условия доставки и оплаты
+        </h2>
+        <ul class="delivery__list">
+            <li class="delivery__item">Заявки принимаются <span>с 7:30 до 18:30.</span></li>
+            <li class="delivery__item">
+                Весь заказанный товар доставляется в течении 60 минут после заказа
+                согласно графику
+            </li>
+            <li class="delivery__item">
+                Минимальная сумма заказа <span>по городу</span> составляет - 200 грн.
+            </li>
+            <li class="delivery__item">
+                Минимальная сумма заказа <span>по району</span> составляет 300грн.
+            </li>
+            <li class="delivery__item">
+                Вы можете лично забрать свой заказ в нашем магазине по адресу: <span>ул.Банковская 95 б</span>
+            </li>
+        </ul>
+    </div>
+</section>
+            <div class="contacts" id="contacts">
+    <div class="container">
+        <div class="contacts__wrapper">
+            <ul class="contacts__list">
+                <li class="contacts__item">улица Банковская 95 б, район больницы АИЗ-а</li>
+                <li class="contacts__item"><a href="mailto:everest20@gmail.com">everest20@gmail.com</a></li>
+                <li class="contacts__item"><a href="tel:+380958045102">+38 (095) - 80 - 45 - 102</a>
+                </li>
+                <li class="contacts__item"><a href="tel:+380682204208 ">+38 (068) - 22 - 04 - 208 </a></li>
+                <li class="contacts__item">
+                    Поделись
+                    <ul class="share">
+                        <li class="share__item">
+                            <a href="https://t.me/share/url?url=https://everest-market.store/">
+                                Телеграмм
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="contacts__map">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2625.4018799759515!2d37.59706970147697!3d48.850546522813026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40df9b278acf10c7%3A0x6df4ea59608755a2!2z0YPQuy4g0JHQsNC90LrQvtCy0YHQutCw0Y8sIDk1LCDQodC70LDQstGP0L3RgdC6LCDQlNC-0L3QtdGG0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCA4NDEyMg!5e0!3m2!1sru!2sua!4v1603604697125!5m2!1sru!2sua"
+            aria-hidden="false"
+            tabindex="0">
+        </iframe>
+    </div>
+</div>
+            <section class="modal">
+    <div class="modal__overlay">
+        <div class="modal__window">
+            <h2 class="title">Оформление заказа</h2>
+            <div class="order-form">
+                <div class="order-form__right">
+                    <h3 class="title">
+                        Ваш заказ
+                    </h3>
+                        <div class="order-form__list" data-simplebar>
+                        </div>
+                    <div class="order-form__final-price">
+                        Сумма заказа: <span><span class="total-price">0</span> грн</span>
+                    </div>
+                </div>
+                <div class="order-form__left">
+                    <form class="order-form__form form" method="POST">
+                        <input type="hidden" name="admin_email[]" value="sergeyvasylenko4@gmail.com">
+                        <input type="hidden" name="form_subject" value="Заказ с магазина">
+                        <h3 class="title">
+                            Способ получения заказа
+                        </h3>
+                        <div class="form__item">
+                            <label class="form__radio-item form__item_courier">
+                                <input type="radio" name="Тип доставки" value="Курьер">
+                                <span>Курьером</span>
+                            </label>
+                            <label class="form__radio-item form__item_self">
+                                <input type="radio" name="Тип доставки" value="Самовывоз">
+                                <span>Самовывоз</span>
+                            </label>
+                        </div>
+                        <h3 class="title">
+                            Данные покупателя
+                        </h3>
+                        <div class="form__item">
+                            <div class="form__row">
+                                <input type="text" name="Имя" placeholder="Имя" required>
+                                <input type="text" name="Фамилия" placeholder="Фамилия" required>
+                            </div>
+                            <div class="form__row">
+                                <input type="tel" name="Телефон" placeholder="Телефон" required>
+                                <input class="additional" type="text" name="Адрес" placeholder="Адрес доставки">
+                            </div>
+                        </div>
+                        <h3 class="title">
+                            Способ оплаты
+                        </h3>
+                        <div class="form__item">
+                            <label class="form__radio-item form__item_cash">
+                                <input type="radio" name="Способ оплаты" value="Наличными">
+                                <span>Наличными при получении</span>
+                            </label>
+                            <label class="form__radio-item form__item_card">
+                                <input type="radio" name="Способ оплаты" value="Картой">
+                                <span>Картой при получении</span>
+                            </label>
+                        </div>
+                        <div class="btn">
+                            <button type="submit">Оформить заказ</button>
+                        </div>
+                    </form>
+                    <div class="order-form__policy">
+                        Нажимая кнопку "Оформить заказ", Вы соглашаетесь с <a href="#">политикой конфиденциальности</a>
+                        нашей компании.
+                    </div>
+                    <div class="order-form__tip">
+                        Весовой товар может не соответствовать выбранному весу на 10-40 грамм
+                    </div>
+                    <div class="order-form__tip">
+                        Поля обязательны для заполнения
+                    </div>
+                </div>
+            </div>
+            <button class="modal__close"></button>
+        </div>
+    </div>
+</section>
+        </main>
+        <!-- _______________________Основа сайта_______________________ -->
+        <footer class="footer">
+    <div class="container">
+        <div class="footer__wrapper">
+            <div class="footer__rights">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="img/decorations/logo-black.png" alt="Logo">
+                    </a>
+                </div>
+                <div class="footer__brend">
+                    © Everest 2020
+                </div>
+            </div>
+            <nav class="footer__nav">
+                <ul class="footer__list">
+                    <li class="footer__item"><a href="catalog.html" class="footer__link">Каталог</a></li>
+                    <li class="footer__item"><a href="#contacts" class="footer__link">Контакты</a></li>
+                    <li class="footer__item"><a href="delivery.html" class="footer__link">Доставка и оплата</a></li>
+                </ul>
+            </nav>
+            <div class="footer__credits">
+                <div class="footer__credits-item">
+                    <a href="#">
+                        Политика конфиденциальности
+                    </a>
+                </div>
+                <div class="footer__credits-item">
+                    <a href="#">
+                        Публичный договор оферты
+                    </a>
+                </div>
+            </div>
+            <div class="footer__phones">
+                <div class="footer__phone">
+                    <a href="tel:+380958045102">+38 (095) - 80 - 45 - 102</a>
+                </div>
+                <div class="footer__phone">
+                   <a href="tel:+380682204208">+38 (068) - 22 - 04 - 208</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+        <section class="cart">
+    <h4 class="cart__title">
+        Корзина
+    </h4>
+    <div class="cart__inner">
+        <div class="cart__empty">
+            <div class="cart__content">
+                <svg>
+                    <use xlink:href='img/svg/sprite.svg#cart'></use>
+                </svg>
+                <div>Корзина пустая</div>
+            </div>
+            <div class="btn">
+                <button>
+                    Вернуться к покупкам
+                </button>
+            </div>
+        </div>
+        <div class="cart__full">
+            <div class="cart__content" data-simplebar>
+            </div>
+            <div class="cart__purchase">
+                <div class="cart__final-price">
+                    Примерная сумма заказа: <span><span class="total-price">0</span> грн</span>
+                </div>
+                <div class="btn">
+                    <button href="#">
+                        Оформить заказ
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="cart__close"></button>
+</section>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,1376 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>Everest</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <noscript>
+        <style>
+            .simplebar-content-wrapper {
+                overflow: auto;
+            }
+        </style>
+    </noscript>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header header__page">
+    <div class="container">
+        <div class="header__wrapper">
+            <div class="header__mobile-btns">
+                <button class="header__burger">
+                    <span></span>
+                </button>
+                <div class="header__mobile mobile">
+                    <svg>
+                        <use xlink:href='img/svg/sprite.svg#mobile'></use>
+                    </svg>
+                    <div class="mobile__dropdown">
+                        <a href="tel:+380958045102">+38 (095) - 80 - 45 - 102</a>
+                        <a href="tel:+380682204208">+38 (068) - 22 - 04 - 208</a>
+                    </div>
+                </div>
+            </div>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/decorations/logo-black.png" alt="Logo">
+                </a>
+            </div> 
+            <nav class="header__nav">
+                <ul class="header__list">
+                    <li class="header__item header__item_drop">
+                        <a class="header__link" href="catalog.php">Каталог</a>
+                        <ul class="catalog-drop">
+                            <li class="catalog-drop__item">
+                                <a class="catalog-drop__link"
+                                    href="<?php $_SERVER['SCRIPT_NAME']?>?category=vegetables">Овощи, зелень</a>
+                            </li>
+                            <li class="catalog-drop__item catalog-drop__item_hovered">
+                                <a class="catalog-drop__link"
+                                    href="<?php $_SERVER['SCRIPT_NAME']?>?category=fruits-nuts">
+                                    Фрукты, орехи
+                                    <svg>
+                                        <use xlink:href='img/svg/sprite.svg#right-arrow'></use>
+                                    </svg>
+                                </a>
+                                <ul class="catalog-drop__drop-list drop-list">
+                                    <li class="drop-list__item drop-list__item_all">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=fruits-nuts">Показать все
+                                            товары</a>
+                                    </li>
+                                    <li class="drop-list__item">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=fruits-nuts&subcategory=fruits">Фрукты</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=fruits-nuts&subcategory=berries">Ягоды</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=fruits-nuts&subcategory=dried">Сухофрукты</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=fruits-nuts&subcategory=nuts">Орехи</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="catalog-drop__item">
+                                <a class="catalog-drop__link"
+                                    href="<?php $_SERVER['SCRIPT_NAME']?>?category=bread">Хлеб</a>
+                            </li>
+                            <li class="catalog-drop__item catalog-drop__item_hovered">
+                                <a class="catalog-drop__link" href="<?php $_SERVER['SCRIPT_NAME']?>?category=grocery">
+                                    Бакалея
+                                    <svg>
+                                        <use xlink:href='img/svg/sprite.svg#right-arrow'></use>
+                                    </svg>
+                                </a>
+                                <ul class="catalog-drop__drop-list drop-list">
+                                    <li class="drop-list__item drop-list__item_all">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=grocery">Показать все
+                                            товары</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=grocery&subcategory=flour">Мука</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=grocery&subcategory=pasta">Макароны
+                                        </a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=grocery&subcategory=flake">Хлопья</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=grocery&subcategory=flake500">Хлопья
+                                            500 гр</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=grocery&subcategory=flake800">Хлопья
+                                            800 гр</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="catalog-drop__item catalog-drop__item_hovered">
+                                <a class="catalog-drop__link" href="<?php $_SERVER['SCRIPT_NAME']?>?category=crops">
+                                    Крупы
+                                    <svg>
+                                        <use xlink:href='img/svg/sprite.svg#right-arrow'></use>
+                                    </svg>
+                                </a>
+                                <ul class="catalog-drop__drop-list drop-list">
+                                    <li class="drop-list__item drop-list__item_all">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=crops">Показать все
+                                            товары</a>
+                                    </li>
+                                    <li class="drop-list__item">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=crops&subcategory=cropsweight">Крупа
+                                            весовая</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=crops&subcategory=bulgur">Булгур</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=crops&subcategory=buckwheat">Гречневая
+                                            и гороховая</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=crops&subcategory=rice">Рисовая</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=crops&subcategory=cropsanother">Крупа
+                                            остальная</a>
+                                    </li>
+                                </ul>
+
+                            </li>
+                            <li class="catalog-drop__item catalog-drop__item_hovered">
+                                <a class="catalog-drop__link" href="<?php $_SERVER['SCRIPT_NAME']?>?category=meat">
+                                    Мясо и колбаса
+                                    <svg>
+                                        <use xlink:href='img/svg/sprite.svg#right-arrow'></use>
+                                    </svg>
+                                </a>
+                                <ul class="catalog-drop__drop-list drop-list">
+                                    <li class="drop-list__item drop-list__item_all">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=meat">Показать все товары</a>
+                                    </li>
+                                    <li class="drop-list__item">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=meat&subcategory=fresh">Свежина</a>
+                                    </li>
+                                    <li class="drop-list__item">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=meat&subcategory=meatfrozen">Мясо
+                                            свежеморожённое</a>
+                                    </li>
+                                    <li class="drop-list__item">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=meat&subcategory=meatall">Мясные
+                                            изделия</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=meat&subcategory=sausage">Сосиски
+                                            и сардельки</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=meat&subcategory=sausageboiled">Колбаса
+                                            варёная</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=meat&subcategory=sausagesmoked">Колбаса
+                                            полукопчёная</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=meat&subcategory=sausageuncooked">Колбаса
+                                            сырокопчёная</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=meat&subcategory=pate">Паштеты</a>
+                                    </li>
+                                </ul>
+
+                            </li>
+                            <li class="catalog-drop__item catalog-drop__item_hovered">
+                                <a class="catalog-drop__link" href="<?php $_SERVER['SCRIPT_NAME']?>?category=dairy">
+                                    Молочные продукты
+                                    <svg>
+                                        <use xlink:href='img/svg/sprite.svg#right-arrow'></use>
+                                    </svg>
+                                </a>
+                                <ul class="catalog-drop__drop-list drop-list">
+                                    <li class="drop-list__item drop-list__item_all">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=dairy">Показать все
+                                            товары</a>
+                                    </li>
+                                    <li class="drop-list__item">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=dairy&subcategory=milk">Молоко</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=dairy&subcategory=cream">Сливки</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=dairy&subcategory=butter">Масла
+                                            сливочные</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=dairy&subcategory=sourcream">Cметана</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=dairy&subcategory=kefir">Кефир</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=dairy&subcategory=yoghurtdrink">Йогурт
+                                            питьевой</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=dairy&subcategory=yoghurt">Йогурт
+                                            густой</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=dairy&subcategory=curd">Творог</a>
+                                    </li>
+                                </ul>
+
+                            </li>
+                            <li class="catalog-drop__item catalog-drop__item_hovered">
+                                <a class="catalog-drop__link" href="<?php $_SERVER['SCRIPT_NAME']?>?category=cheese">
+                                    Сыры
+                                    <svg>
+                                        <use xlink:href='img/svg/sprite.svg#right-arrow'></use>
+                                    </svg>
+                                </a>
+                                <ul class="catalog-drop__drop-list drop-list">
+                                    <li class="drop-list__item drop-list__item_all">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=cheese">Показать все
+                                            товары</a>
+                                    </li>
+                                    <li class="drop-list__item">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=cheese&subcategory=solid">Сыр
+                                            твёрдый</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=cheese&subcategory=fused">Сыр
+                                            плавленый</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=cheese&subcategory=packaging">Сыры
+                                            в упаковке</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="catalog-drop__item catalog-drop__item_hovered">
+                                <a class="catalog-drop__link" href="<?php $_SERVER['SCRIPT_NAME']?>?category=eggs">
+                                    Яйца
+                                    <svg>
+                                        <use xlink:href='img/svg/sprite.svg#right-arrow'></use>
+                                    </svg>
+                                </a>
+                                <ul class="catalog-drop__drop-list drop-list">
+                                    <li class="drop-list__item drop-list__item_all">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=eggs">Показать все товары</a>
+                                    </li>
+                                    <li class="drop-list__item">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=eggs&subcategory=quail">Яйца
+                                            перепелиные</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=eggs&subcategory=chicken">Яйца
+                                            куринные</a>
+                                    </li>
+                                </ul>
+
+                            </li>
+                            <li class="catalog-drop__item catalog-drop__item_hovered">
+                                <a class="catalog-drop__link" href="<?php $_SERVER['SCRIPT_NAME']?>?category=oil">
+                                    Масла растительные
+                                    <svg>
+                                        <use xlink:href='img/svg/sprite.svg#right-arrow'></use>
+                                    </svg>
+                                </a>
+                                <ul class="catalog-drop__drop-list drop-list">
+                                    <li class="drop-list__item drop-list__item_all">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=oil">Показать все товары</a>
+                                    </li>
+                                    <li class="drop-list__item">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=oil&subcategory=refined">Подсолнечное
+                                            рафинированое</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=oil&subcategory=unrefined">Подсолнечное
+                                            нерафинированое</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=oil&subcategory=olive">Оливковое</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=oil&subcategory=pumpkin">Тыквенное</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=oil&subcategory=linen">Льняное</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=oil&subcategory=corn">Кукурузное</a>
+                                    </li>
+                                </ul>
+
+                            </li>
+                            <li class="catalog-drop__item catalog-drop__item_hovered">
+                                <a class="catalog-drop__link" href="<?php $_SERVER['SCRIPT_NAME']?>?category=sauces">
+                                    Соусы,заправки
+                                    <svg>
+                                        <use xlink:href='img/svg/sprite.svg#right-arrow'></use>
+                                    </svg>
+                                </a>
+                                <ul class="catalog-drop__drop-list drop-list">
+                                    <li class="drop-list__item drop-list__item_all">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=sauces">Показать все
+                                            товары</a>
+                                    </li>
+                                    <li class="drop-list__item">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=sauces&subcategory=sauce">Соусы</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=sauces&subcategory=ketchup">Кетчупы</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=sauces&subcategory=mayo">Майонез</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=sauces&subcategory=mustard">Горчица</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=sauces&subcategory=tomato">Томатная
+                                            паста</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=sauces&subcategory=marinade">Маринады</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=sauces&subcategory=fill">Заправки</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=sauces&subcategory=soy">Соевые
+                                            соусы</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=sauces&subcategory=radish">Хрен</a>
+                                    </li>
+                                </ul>
+
+                            </li>
+                            <li class="catalog-drop__item catalog-drop__item_hovered">
+                                <a class="catalog-drop__link"
+                                    href="<?php $_SERVER['SCRIPT_NAME']?>?category=conservation">
+                                    Консервация
+                                    <svg>
+                                        <use xlink:href='img/svg/sprite.svg#right-arrow'></use>
+                                    </svg>
+                                </a>
+                                <ul class="catalog-drop__drop-list drop-list">
+                                    <li class="drop-list__item drop-list__item_all">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=conservation">Показать все
+                                            товары</a>
+                                    </li>
+                                    <li class="drop-list__item">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=conservation&subcategory=adjika">Аджика</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=conservation&subcategory=peas">Горошек
+                                            и кукуруза</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=conservation&subcategory=mushroom">Грибы</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=conservation&subcategory=olives">Оливки
+                                            и маслины</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=conservation&subcategory=squash">Икра
+                                            кабачковая и фасоль</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=conservation&subcategory=tomato">Огурцы
+                                            и томаты</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=conservation&subcategory=pickles">Соления</a>
+                                    </li>
+                                </ul>
+
+                            </li>
+                            <li class="catalog-drop__item catalog-drop__item_hovered">
+                                <a class="catalog-drop__link" href="<?php $_SERVER['SCRIPT_NAME']?>?category=fish">
+                                    Рыба и рыбные изделия
+                                    <svg>
+                                        <use xlink:href='img/svg/sprite.svg#right-arrow'></use>
+                                    </svg>
+                                </a>
+                                <ul class="catalog-drop__drop-list drop-list">
+                                    <li class="drop-list__item drop-list__item_all">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=fish">Показать все товары</a>
+                                    </li>
+                                    <li class="drop-list__item">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=fish&subcategory=smoked">Рыба
+                                            копчёная</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=fish&subcategory=fresh">Рыба
+                                            свежемороженая</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=fish&subcategory=canned">Рыбные
+                                            консервы</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=fish&subcategory=preserve">Рыбные
+                                            пресервы</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=fish&subcategory=roe">Икра</a>
+                                    </li>
+                                </ul>
+
+                            </li>
+                            <li class="catalog-drop__item catalog-drop__item_hovered">
+                                <a class="catalog-drop__link" href="<?php $_SERVER['SCRIPT_NAME']?>?category=hotdrinks">
+                                    Кофе, Чай
+                                    <svg>
+                                        <use xlink:href='img/svg/sprite.svg#right-arrow'></use>
+                                    </svg>
+                                </a>
+                                <ul class="catalog-drop__drop-list drop-list">
+                                    <li class="drop-list__item drop-list__item_all">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=hotdrinks">Показать все
+                                            товары</a>
+                                    </li>
+                                    <li class="drop-list__item">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=hotdrinks&subcategory=coffee">Кофе</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=hotdrinks&subcategory=tea">Чай</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=hotdrinks&subcategory=another">Остальные
+                                            напитки</a>
+                                    </li>
+                                </ul>
+
+                            </li>
+                            <li class="catalog-drop__item catalog-drop__item_hovered">
+                                <a class="catalog-drop__link" href="<?php $_SERVER['SCRIPT_NAME']?>?category=drinks">
+                                    Вода,напитки,соки
+                                    <svg>
+                                        <use xlink:href='img/svg/sprite.svg#right-arrow'></use>
+                                    </svg>
+                                </a>
+                                <ul class="catalog-drop__drop-list drop-list">
+                                    <li class="drop-list__item drop-list__item_all">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=drinks">Показать все
+                                            товары</a>
+                                    </li>
+                                    <li class="drop-list__item">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=drinks&subcategory=water">Вода</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=drinks&subcategory=drink">Напитки</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=drinks&subcategory=juice">Соки</a>
+                                    </li>
+                                </ul>
+
+                            </li>
+                            <li class="catalog-drop__item catalog-drop__item_hovered">
+                                <a class="catalog-drop__link" href="<?php $_SERVER['SCRIPT_NAME']?>?category=spice">
+                                    Специи,приправы
+                                    <svg>
+                                        <use xlink:href='img/svg/sprite.svg#right-arrow'></use>
+                                    </svg>
+                                </a>
+                                <ul class="catalog-drop__drop-list drop-list">
+                                    <li class="drop-list__item drop-list__item_all">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=spice">Показать все
+                                            товары</a>
+                                    </li>
+                                    <li class="drop-list__item">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=spice&subcategory=pepper">Перцы</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=spice&subcategory=green">Зелень
+                                            и травы</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=spice&subcategory=spices">Специи</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=spice&subcategory=condiment">Приправы</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=spice&subcategory=salt">Приправы
+                                            без соли</a>
+                                    </li>
+                                </ul>
+
+                            </li>
+                            <li class="catalog-drop__item">
+                                <a class="catalog-drop__link" href="<?php $_SERVER['SCRIPT_NAME']?>?category=culinary">
+                                    Кулинарные добавки
+                                </a>
+                            </li>
+                            <li class="catalog-drop__item catalog-drop__item_hovered">
+                                <a class="catalog-drop__link" href="<?php $_SERVER['SCRIPT_NAME']?>?category=bakery">
+                                    Кондитерские изделия
+                                    <svg>
+                                        <use xlink:href='img/svg/sprite.svg#right-arrow'></use>
+                                    </svg>
+                                </a>
+                                <ul class="catalog-drop__drop-list drop-list">
+                                    <li class="drop-list__item drop-list__item_all">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=bakery">Показать все
+                                            товары</a>
+                                    </li>
+                                    <li class="drop-list__item">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=bakery&subcategory=сandy">Конфеты</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=bakery&subcategory=biscuit">Печенье</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=bakery&subcategory=chocolate">Шоколад</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=bakery&subcategory=condensed">Сгущённое
+                                            молоко</a>
+                                    </li>
+                                    <li class="drop-list__item" class="catalog__tab">
+                                        <a class="drop-list__link"
+                                            href="<?php $_SERVER['SCRIPT_NAME']?>?category=bakery&subcategory=another">Остальное</a>
+                                    </li>
+                                </ul>
+
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="header__item"><a href="#contacts" class="header__link">Контакты</a></li>
+                    <li class="header__item"><a href="delivery.html" class="header__link">Доставка и оплата</a></li>
+                </ul>
+            </nav>
+            <div class="header__phones">
+                <div class="header__phone">
+                    <a href="tel:+380958045102">+38 (095) - 80 - 45 - 102</a>
+                </div>
+                <div class="header__phone-dropdown">
+                    <a href="tel:+380682204208">+38 (068) - 22 - 04 - 208</a>
+                </div>
+            </div>
+            <div class="header__icons">
+                <div class="header__mobile mobile">
+                    <svg>
+                        <use xlink:href='img/svg/sprite.svg#mobile'></use>
+                    </svg>
+                    <div class="mobile__dropdown">
+                        <a href="tel:+380958045102">+38 (095) - 80 - 45 - 102</a>
+                        <a href="tel:+380682204208">+38 (068) - 22 - 04 - 208</a>
+                    </div>
+                </div>
+                <form class="header__search">
+                    <input class="header__input" type="text" name="search" placeholder="Поиск...">
+                    <svg>
+                        <use xlink:href='img/svg/sprite.svg#search'></use>
+                    </svg>
+                </form>
+                <div class="header__cart">
+                    <svg>
+                        <use xlink:href='img/svg/sprite.svg#cart'></use>
+                    </svg>
+                    <span class="header__cart-counter">0</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+        <!-- _______________________Основа сайта_______________________ -->
+        <main>
+            <section class="conf">
+    <div class="container">
+        <h1 class="conf__title">Публичный договор оферты</h1>
+        <div class="conf__subtitle">
+            Публічний договір на замовлення, придбання, продаж та доставку Товарів.
+            Цей договір між Фізичною особою-підприємцем ФИО , в подальшому «ФОП» та будь-якою особою - замовником послуг
+            на інтренет-сайті <a href="https://everest-market.store">"https://everest-market.store"</a> , в подальшому -
+            «Замовник». Цей Договір є договором
+            доручення на замовлення, придбання та доставку Товарів та визначає основні умови замовлення, придбання та
+            доставки товарів, а також продажу Товарів за допомогою "віртуальної вітрини" інтернет-сайта
+            <a href="https://everest-market.store">"https://everest-market.store"</a>. Цей договір є змішаним договором
+            відповідно до частини 2 статті 628 ЦК
+            України. До правовідносин за даним договором застосовуються положення параграфу 2 глави 54 ЦК України та
+            положення глави 68 ЦК України.
+
+        </div>
+        <div class="conf__block block">
+            <div class="block__title">
+                1. ЗАГАЛЬНІ УМОВИ
+            </div>
+            <p>
+                1.1. ФОП оприлюднює цей договір, який є публічним договором – офертою (пропозицією) на адресу фізичних
+                та юридичних осіб відповідно до ст.633 ЦК України.
+            </p>
+            <p>
+                1.3. Оферта може бути акцептована (прийнята) будь-якою фізичною особою або юридичною особою на території
+                України, яка має намір замовити товар за допомогою інтернет-сайта, інформація про який розміщена на
+                сайті <a href="https://everest-market.store">https://everest-market.store</a>.
+            </p>
+            <p>
+                1.4. Замовник беззаперечно приймає всі умови, які містяться в Оферті в цілому (тобто в повному обсязі та
+                без виключень).
+            </p>
+            <p>
+                1.5. У випадку прийняття умов цього Договору, фізична або юридична особа, яка здійснює акцепт Оферти,
+                набуває статусу Замовника. Акцептом є факт замовлення товарів на сайті <a
+                    href="https://everest-market.store">https://everest-market.store</a>
+                та/або замовлення товарів за телефоном.
+            </p>
+            <p>
+                1.6. Оферта, всі додатки до неї, а також вся додаткова інформація про товари, оприлюднена на сайті
+                <a href="https://everest-market.store">https://everest-market.store</a>.
+            </p>
+        </div>
+        <div class="conf__block block">
+            <div class="block__title">
+                2. СТАТУС ІНТЕРНЕТ-МАРКЕТУ "EVEREST-MARKET"
+            </div>
+            <p>
+                2.1. Інтернет-сайт <a href="https://everest-market.store">https://everest-market.store</a> призначений
+                для надання інформації та організації
+                дистанційного засобу замовлення товарів через мережу Інтернет.
+            </p>
+            <p>
+                2.2. Інтернет-сайт не вимагає від Замовника спеціальних дій для використання ресурсу інтернет-сайту для
+                огляду та оформлення замовлення товару, таких як реєстрація та укладання договору використання ресурсу
+                інтернет-сайту.
+            </p>
+            <p>
+                2.3. Інтернет-сайт не несе відповідальності за зміст та достовірність інформації, наданої Замовником при
+                оформлені замовлення, в тому числі за зміст та достовірність персональних даних
+            </p>
+        </div>
+        <div class="conf__block block">
+            <div class="block__title">
+                3. СТАТУС ЗАМОВНИКА
+            </div>
+            <p>
+                3.1. Замовник несе відповідальність за достовірність наданої при оформленні замовлення інформації та її
+                чистоту від претензій третіх осіб. У випадку наявності помилок та/або надання неповних даних в полях
+                «ПІБ» та «Адреса доставки», ФОП повністю звільняється від відповідальності за неналежне виконання
+                замовлення.
+            </p>
+            <p>
+                3.2. Замовник підтверджує свою згоду з умовами, які встановлені цим Договором, при оформлені замовлення
+                на сайті та/або по телефону.
+            </p>
+            <p>
+                3.3. Використання ресурсу інтернет-сайта для огляду та вибору товару, а також оформлення замовлення є
+                для Замовника безкоштовним.
+            </p>
+        </div>
+        <div class="conf__block block">
+            <div class="block__title">
+                4. ПРЕДМЕТ ОФЕРТИ
+            </div>
+            <p>
+                4.1. ФОП, у якості повіреного відповідно до ст.1000 ЦК України, на підставі замовлень Замовника, виконує
+                доручення Замовника (який виступає - довірителем) на формування замовлення, придбання та доставку
+                підакцизних товарів від імені та за рахунок Замовника у відповідності із умовами та за цінами,
+                встановленими на сторінках інтернет-сайта та які визначені торговими партнерами ФОП, з врахуванням
+                особливостей, що викладені нижче.
+            </p>
+            <p>
+                4.2. Замовних натискаючи віртуальну кнопку "Оформить заказ" оформлює замовлення, а саме, цим надає
+                доручення ФОП на придбання та доставку відповідних товарів від імені та за рахунок Замовника.
+            </p>
+            <p>
+                4.3. Також на підставі замовлень Замовника, ФОП здійснює формування замовлення та продає Замовнику
+                непідакцизні товари (що зазначені в інших розділах інтенет-сайта ніж "Товари для осіб старше 18 років")
+                у відповідності із умовами та за цінами, встановленими на сторінках інтернет-сайта, з врахуванням
+                особливостей, що викладені нижче.
+            </p>
+            <p>
+                4.4. Доставка товарів, які були замовлені та придбані Замовником, здійснюється ФОП або третьою особою
+                (Перевізником) за дорученням ФОП. Замовник має право забрати (отримати) товар самостійно. Замовнику при
+                оформлені замовлення надається право вибору способу доставки.
+            </p>
+            <p>
+                4.5. Фізична або юридична особа вважається такою, яка прийняла всі умови Оферти (акцепт Оферти) в
+                повному обсязі та без виключень з моменту вказаного в п. 1.5. цього Договору. У випадку акцепту Оферти
+                одним з вищезазначених способів, фізична або юридична особа вважається такою, що уклала з ФОП даний
+                договір та набуває статусу Замовника.
+            </p>
+            <p>
+                4.6. Для виконання зобов’язань за цим Договором ФОП має право залучати третіх осіб (юридичних осіб
+                та/або фізичних осіб – підприємців) за договорами доручення, комісії, перевезення тощо.
+            </p>
+            <p>
+                4.7. ФОП має право передати виконання зобов’язань за цим договором іншій особі (замісникові) повністю
+                або в частині на вибір ФОП.
+            </p>
+            <p>
+                4.8. Сторони домовились, що ФОП виконав свої зобов’язання за цим договором після передачі (отримання)
+                Замовнику замовлених Товарів.
+            </p>
+        </div>
+        <div class="conf__block block">
+            <div class="block__title">
+                5. ВИЗНАЧЕННЯ ТЕРМІНІВ
+            </div>
+            <p>
+                5.1. Замовник – фізична або юридична особа, яка прийняла в повному обсязі та без виключень умови Оферти
+                (особа, яка здійснила акцепт Оферти) у відповідності до п.4.4. Оферти.
+            </p>
+            <p>
+                5.2. Інтернет-сайт - сайт, що має адресу в мережі Інтернету <a
+                    href="https://everest-market.store">https://everest-market.store</a> призначений
+                для надання інформації та оформлення замовлення товарів (та/ або оформлення доручення на придбання та
+                доставку товарів) Замовнику на підставі цієї Оферти
+            </p>
+            <p>
+                5.3. Сайт – інтернет-сайт, що має адресу в мережі Інтернету <a
+                    href="https://everest-market.store">https://everest-market.store</a>.
+            </p>
+            <p>
+                5.4. Каталог – інформація про товари, які розміщені на сторінках (розділах) інтернет-сайту.
+            </p>
+            <p>
+                5.5. Замовлення – рішення Замовника замовити товар та його та доставку, яке оформлене в
+                інтернет-супермаркеті та/або доручення на придбання та доставку товару.
+            </p>
+            <p>
+                5.6. Місце виконання договору – місце (адреса), зазначена Замовником, за якою доставляється товар
+                Замовнику, або адреса узгоджена з ФОП, у випадку самостійного вивозу товарів або відмови Замовника від
+                доставки товару.
+            </p>
+            <p>
+                5.7. Представник Замовника – фізична особа, яка пред’явить роздруковане замовлення (доручення) або інший
+                документ, що свідчить про укладання договору з ФОП, Представник юридичної особи, крім вищезазначеного
+                документу, зобов’язаний пред’явити довіреність на отримання товару та паспорт.
+            </p>
+            <p>
+                5.8. Перевізник – юридична особа або фізична особа – підприємець, який прийняв на себе за договором
+                обов’язки по доставці товару до пункту призначення, зазначеного Замовником, а також видати товар
+                Замовнику.
+            </p>
+        </div>
+        <div class="conf__block block">
+            <div class="block__title">
+                6. ПОРЯДОК УКЛАДАННЯ ДОГОВОРУ
+            </div>
+            <p>
+                6.1. Замовник може оформити замовлення самостійно на сайті або за телефонами, зазначеними на сайті, на
+                умовах даного Договору.
+            </p>
+            <p>
+                6.2. При оформлені замовлення на сайті Замовник зобов’язаний надати про себе наступну інформацію:
+                <p>• П.І.Б. (для фізичних осіб) або повне найменування, код ЄДРПОУ (для юридичних осіб);</p>
+                <p>• адресу доставки Товару;</p>
+                <p>• контактний телефон;</p>
+            </p>
+            <p>
+                6.3. Волевиявлення Замовника здійснюється шляхом внесення останнім відповідних даних у форму замовлення
+                на сайті або подачі замовлення за телефонами.
+            </p>
+            <p>
+                6.4. Інтернет-сайт та ФОП можуть здійснюватити редагування інформації замовлення та інформації про
+                Замовника для уточнення лише за згодою Замовника.
+            </p>
+        </div>
+        <div class="conf__block block">
+            <div class="block__title">
+                7. ІНФОРМАЦІЯ ПРО ТОВАР
+            </div>
+            <p>
+                7.1. Товар представлений на сайті через фото- та/або відео-зразки та/або опис товару, в разі відсутності
+                його зображення. Зображення товару на Сайті не завжди можуть відповідати фактичним через зміни дизайну
+                упаковки виробником, але зі збереженням всіх якісних і кількісних характеристик товару.
+            </p>
+            <p>
+                7.2. Кожний фото- та/або відео-зразок супроводжується текстовою інформацією: найменування, розміри (при
+                необхідності), інформаційною ціною (яка може включати вартість доставки та вартість іншіих послуг, які
+                надаються ФОП) та описом товару.
+            </p>
+            <p>
+                7.3. Всі інформаційні матеріали, які представлені в інтернет-маркеті, носять довідковий характер та не
+                можуть в повній мірі передати інформацію про властивості та характеристики товару, включаючи колір,
+                розмір та форми та іншого. У випадку виникнення у Замовника питань, які стосуються властивостей,
+                характеристик товару та іншого, Замовник повинен, перед оформленням замовлення, звернутися до
+                інтернет-сайту за телефонами зазначеними на сайті для з’ясування повної інформації про товар.
+            </p>
+            <p>
+                7.4. За проханням Замовника інтернет-сайт зобов’язаний сприяти в надані (по телефону або через електрону
+                пошту) інформації, необхідної та достатньої, з точки зору Замовника для прийняття ним рішення про
+                придбання товару (та/або надання доручення на придбання та доставку товару).
+            </p>
+            <p>
+                7.5. Замовник повідомлений про те, що придбаває товар із знижкою, у зв’язку із його недоліками
+                (дефектами), позбавляється права посилатися на них в подальшому.
+            </p>
+            <p>
+                7.6. Замовник повідомлений про те, що товар, зазначений у рахунку окремими позиціями у будь-якому
+                випадку не є комплектом.
+            </p>
+        </div>
+        <div class="conf__block block">
+            <div class="block__title">
+                8. ПОРЯДОК ЗАМОВЛЕННЯ ТОВАРУ
+            </div>
+            <p>
+                8.1. Замовник вправі оформити замовлення на будь-який товар, який представлений на сторінках
+                інтернет-сайту. Кожний товар може бути замовлений в будь-якій кількості. Виключення із зазначеного
+                правила вказані при описі кожного товару у випадку проведення акцій, зняття товару з продажу та інше.
+                Замовлення (доручення на придбання та доставку товара) може бути оформлене Замовником за телефонами,
+                зазначеними на сайті, або оформлене самостійно за допомогою "електронної корзини" на сайті.
+            </p>
+            <p>
+                8.2. Після оформлення замовлення (та/або доручення на придбання та доставку товара) представник
+                інтернет-сайту на E-mail приходить повідомлення, що містить рахунок із зазначенням найменування,
+                розміру, ціни вибраного товару та загальної суми замовлення. Повідомлення на E-mail Замовником є
+                підтвердженням прийняття замовлення. В подальшому представник інтернет-сайту може зв’язатися з
+                Замовником (по телефону або через електрону пошту) для уточнення інформація щодо умов замовлення та
+                доставки.
+            </p>
+            <p>
+                8.3. При неможливості замовлення, придбання та доставки товару (та/або виконання доручення на придбання
+                та доставку товара) представник інтернет-сайта зобов’язаний довести це до відома Замовника (по телефону
+                або через електронну пошту).
+            </p>
+            <p>
+                8.4. Замовник вправі зробити попереднє замовлення (та/або оформити доручення на придбання та доставку
+                товара) на тимчасово відсутні товари.
+            </p>
+            <p>8.5. При відсутності товару Замовник вправі замінити його іншим товаром або анулювати замовлення.</p>
+            <p>8.6. Замовлення обробляється з моменту його отримання.</p>
+            <p>
+                8.7. Строк виконання замовлення на продаж, придбання та доставку товару зазначається в рахунку та
+                відповідно до заявки Замовника, що подана через інтернет-супермаркет в порядку вказаному в п.6 цього
+                Договору.
+            </p>
+        </div>
+        <div class="conf__block block">
+            <div class="block__title">
+                9. ЦІНА ТОВАРУ
+            </div>
+            <p>
+                9.1. Ціна товару на сторінках інтернет-сайта зазначається в гривнях за одиницю товару та/або одиницю
+                виміру та є інформаційною.
+            </p>
+            <p>
+                9.2. Зазначена на сайті ціна товару може бути змінена ФОП та/або інтернет-сайтом в односторонньому
+                порядку, при цьому ціна на замовлений Замовником товар не підлягає зміні, якщо він підлягає доставці
+                протягом 6 годин з моменту оформлення замовлення. В разі, коли виконання замовлення Замовника (доставка)
+                здійснюється за замовленням Замовника, поданим згідно статті 6 цього Договору, після 18 години 00
+                хвилин, поточного дня, ціна Товару може бути змінена в односторонньому порядку відповідно до ціни
+                наступного дня (відповідно до щоденної зміни ціни товарів, або зміни ціни у роздрібній мережі та
+                магазині).
+            </p>
+            <p>
+                9.3. Повна вартість замовлення складається із:
+                - вартості послуг з доставки та виконання доручення у відповідних замовленнях.
+            </p>
+            <p>
+                9.4. Детальні інформація про каталожну вартість товарів та вартість доставки товарів зазначена на сайті
+                в розділі «Доставка и оплата».
+            </p>
+            <p>
+                9.5.Відповідно до ст.1002 цк України Замовник оплачує ФОП послуги з виконання доручення на прибання та
+                доставку відповідних товарів за умовами визначеними ФОП.
+            </p>
+        </div>
+        <div class="conf__block block">
+            <div class="block__title">
+                10. ВІДШКОДУВАННЯ ВИТРАТ
+            </div>
+            <p>
+                10.1. Порядок відшкодування витрат ФОП у зв’язку з виконанням цього Договору та порядок оплати вартості
+                придбаного товару, зазначений на сайті в розділі «Оплата». При необхідності порядок та умови
+                відшкодування витрат ФОП з виконання доручення та оптати вартості товарів та послуг обговорюються
+                Замовником з представником інтернет-сайту.
+            </p>
+            <p>
+                10.2. Відшкодування витрат ФОП у зв’язку з виконанням цього Договору та оплата вартості придбаних
+                товарів та послуг здійснюється в готівковій або безготівковій формі. Замовник зобов’язаний відшкодувати
+                витрати ФОП у зв’язку з виконанням цього Договору та оплатити вартість придбаних товарів до або в момент
+                передачі йому замовленого товару ФОП або перевізником, який здійснює доставку товару. Відшкодування
+                витрат ФОП у зв'язку з виконанням цього Договору та оплата вартості придбаних товарів, також може бути
+                проведена способом безготівкового перерахування грошових коштів (банківським переказом, оплатою за
+                допомогою платіжних систем, карткою через банківський термінал), при цьому можливі комісії фінансових
+                посередників (банківських установ) оплачуються Замовником.
+            </p>
+            <p>
+                10.3. У разі оплати замовлення з використанням інтернет-оплати Замовник погоджується, що сума фактичного
+                заказу (доставленого, виконаного) може бути меншою (за рахунок вагових товарів, узгоджених замін,
+                оперативна наявність товару та іншого), ніж сума попередньої оплати, проведеної на підставі попереднього
+                замовлення товарів. Решта попередньої оплати, яка виникла при цьому, не повертається Замовнику, а є
+                сумою авансу відповідного Замовника на наступне Замовлення, та буде зарахована як часткова оплата
+                наступного замовлення. У будь-якому випадку цей аванс (решта попередньої оплату) буде зарахован як
+                часткова оплата наступного замовлення, або буде передан у власність ФОП, якщо не буде використан
+                Замовником (відсутній наступне замовлення) на протязі 370 календарних днів з моменту зарахування на
+                рахунок. Списання авансу в оплату замовлення, або у власність ФОП, відбуваєтьсяв автоматичному режимі за
+                згодою Сторін.
+            </p>
+            <p>
+                10.4.У разі неможливості виконання замовлення у повному обсязі сума попередньої оплати, отриманої з
+                використанням інтернет-оплати, повертається Замовнику – платнику на протязі 5 робочих днів з моменту
+                отримання від нього заяви у електронному вигляді на адресу – marketeverest476@gmail.com із зазначенням
+                необхідних платіжних реквізитів для повернення. В іншому випадку така сума оплати зараховується як аванс
+                Замовника на наступне замовлення та використовується у спосіб визначений п.10.4. Договору.
+            </p>
+            <p>
+                10.5. Розрахунки між Сторонами в рамках цього Договору здійснюються в національній валюті – гривнях.
+            </p>
+        </div>
+        <div class="conf__block block">
+            <div class="block__title">
+                11. ДОСТАВКА ТОВАРІВ
+            </div>
+            <p>
+                11.1. Способи, порядок та строки доставки товару зазначені на сайті в розділах «Оплата и Доставка».
+                Порядок та додаткові умови, відмінні від визначених у розділі «Оплата и Доставка» погоджуються
+                Замовником з представником інтернет-сайта.
+            </p>
+            <p>
+                11.2. Самовивіз товару:
+            </p>
+            <p>
+                11.2.1. Замовник отримує товар за Замовленням за місцем узгодженим з ФОП. Адреса та режим роботи
+                зазначені на сайті <a href="https://everest-market.store">https://everest-market.store</a> в розділі
+                «Контакты».
+            </p>
+            <p>
+                11.2.2. Право власності та ризик випадкової загибелі, втрати чи пошкодження товару переходить до
+                Замовника з моменту передачі товару Замовнику або його Представнику шляхом підписання Сторонами
+                товарного чеку та/або замовлення (та/або доручення на придбання та доставку товара) на доставку.
+            </p>
+            <p>
+                11.3. Доставка товару здійснюється власними силами ФОП відповідно до умов доставки замовленого товару,
+                або із залученням третіх осіб (перевізника). Замовник приймає товар та здійснює його огляд та перевірку
+                на протязі не більш 7-ми (сім) хвилин з моменту передачі замовлення.
+            </p>
+            <p>
+                11.3.1. Право власності та ризик випадкової загибелі, втрати чи пошкодження товару переходить до
+                Замовника з моменту передачі товару Замовнику або його Представнику шляхом підписання Сторонами
+                товарного чеку та/або замовлення на доставку.
+            </p>
+            <p>
+                11.3.2. При доставці товар передається Замовнику або Представнику.
+            </p>
+            <p>
+                11.4. Вартість доставки товару в рамках кожного замовлення розраховується виходячи із ваги всіх
+                замовлених товарів, адреси доставки замовлення, тарифів на доставку, які описані на сайті в розділі
+                «Доставка» та оплачується Замовником.
+            </p>
+            <p>
+                11.5. Замовник зобов’язаний прийняти товар в кількості та асортименті в момент його приймання.
+            </p>
+            <p>
+                11.6. При отриманні товару Замовник повинен в присутності представника ФОП перевірити відповідність
+                Товару якісним та кількісним характеристикам, що зазначені в товарному чеку та/або замовленні
+                (дореченні) на доставку (найменування товару кількість, комплектність, тощо).
+            </p>
+            <p>
+                11.7. Замовник або Представник Замовника при прийманні товару підтверджує своїм підписом в товарному
+                чеку та/або замовленні на доставку товарів, що не має претензій до кількості товару, зовнішнього виду та
+                комплектності товару.
+            </p>
+            <p>
+                11.8. ФОП залишає за собою право скасувати замовлення в односторонньому порядку в разі неможливості його
+                комплектації та доставки з причини таких обставин: повінь, землетрус, катаклізми, громадянські акції,
+                протести, введення режиму НС, складна транспортна ситуація в регіоні доставки, несприятливі погодні
+                умови та інших форс-мажорних обставини. У разі скасування замовлення, Замовник може самостійно поновити
+                (або сформувати новий заказ) замовлення на сайті, при цьому він має право на безкоштовну доставку. Ми
+                залишаємо за собою право проводити інформування Замовників про скасування замовленя шляхом смс- або
+                електронним повідомленням за 1 годину до кінця періоду інтервалу доставки.
+                ФОП не несе відповідальності за дії, операторів поштового (кур’єрського) зв’язку, пов'язані з доставкою
+                замовлень Замовникам.
+            </p>
+            <p>
+                11.9.При замовлені товарів на адресу громадських установ, організацій (лікарні, учбові заклади,
+                гуртожитки, державні установи та ін.) доставка виконується до головного входу (рецепції, під’їзду,
+                фойє).
+            </p>
+        </div>
+        <div class="conf__block block">
+            <div class="block__title">
+                12. ГАРАНТІЇ НА ТОВАР
+            </div>
+            <p>
+                12.1. Строк придатності Товару (-ів) встановлюється Виробником та позначається на упаковці
+            </p>
+        </div>
+        <div class="conf__block block">
+            <div class="block__title">
+                13. ПОВЕРНЕННЯ ТОВАРУ
+            </div>
+            <p>
+                13.1. Замовник вправі відмовитись від непідакцизного товару в будь-який час до його передачі, а після
+                передачі непідакцизного товару – в порядку та на умовах, визначених Законом України «Про захист прав
+                споживачів».
+            </p>
+            <p>
+                13.2. Повернення непідакцизного товару належної якості можливе у випадку, якщо збережено його товарний
+                вид, споживчі якості, а також документ, що підтверджує факт та умови замовлення зазначеного товару.
+            </p>
+            <p>
+                13.3. Замовник не вправі відмовитися від товару належної якості, що має індивідуально-визначені
+                властивості, якщо зазначений товар може бути використаний виключно Замовником, який його придбав, (в
+                т.ч. не стандартні (по бажанню Замовника) розміри та інше). Підтвердженням того, що річ має
+                індивідуально-визначені властивості, є відмінність розмірів товару та інших характеристик, що зазначені
+                в інтернет-супермаркеті.
+            </p>
+            <p>
+                13.4. Повернення товару, у випадках, передбачених законом та цим Договором, здійснюється власними силами
+                ФОП відповідно до умов повернення замовленого товару, або із залученням третіх осіб (перевізника).
+            </p>
+            <p>
+                13.5. При відмові Замовника від непідакцизного товару належної якості ФОП повертає грошові кошти в
+                розмірі вартості такого Товару, за виключенням витрат ФОП на доставку товару, що повертається.
+            </p>
+            <p>
+                13.6. Повернення суми, зазначеної в п.13.5. здійснюється одночасно з поверненням товару.
+            </p>
+        </div>
+        <div class="conf__block block">
+            <div class="block__title">
+                14. ВІДПОВІДАЛЬНІСТЬ СТОРІН
+            </div>
+            <p>
+                14.1. Сторони несуть відповідальність передбачену діючим законодавства України та цим Договором.
+            </p>
+            <p>
+                14.2. ФОП не несе відповідальності за шкоду, яка була нанесена Замовнику внаслідок неналежного
+                використання ним товарів, замовлених в інтернет-супермаркеті.
+            </p>
+            <p>
+                14.3. Сторони звільняються від відповідальності за невиконання або неналежне виконання зобов’язань за
+                цим Договором на час дії обставин непереборної сили.
+            </p>
+        </div>
+        <div class="conf__block block">
+            <div class="block__title">
+                15. ІНШІ УМОВИ
+            </div>
+            <p>
+                15.1. До правовідносин між Замовником та ФОП застосовується діюче законодавство України.
+            </p>
+            <p>
+                15.2. У випадку виникнення питань та претензій з боку Замовника він повинен звернутися до Центру
+                обслуговування клієнтів за телефоном: <a href="tel:+380958045102">+380958045102</a> або по e-mail:
+                <a href="mailto:marketeverest467@gmail.com">marketeverest467@gmail.com</a>.
+            </p>
+            <p>
+                15.3. Цей Договір вступає в силу з моменту акцепту Замовником цієї Оферти, відповідно до п.1.5 Договору,
+                та діє до повного виконання своїх зобов’язань Сторонами.
+            </p>
+            <p>
+                15.4. Всі спори та суперечки, які виникають при виконані Сторонами зобов’язань по цьому Договору,
+                вирішуються шляхом переговорів. У випадку неможливості їх усунення, Сторони мають право звернутися за
+                захистом своїх прав та інтересів в судовому порядку.
+            </p>
+            <p>
+                15.5. ФОП та Інтернет-сайт залишає за собою право розширяти та скорочувати товарну пропозицію на сайті,
+                регулює доступ до замовлення будь-яких товарів, а також призупинити чи припинити замовлення будь-яких
+                товарів на власний розсуд.
+            </p>
+        </div>
+        <div class="conf__block block">
+            <div class="block__title">
+                16. ЗАХИСТ ПЕРСОНАЛЬНИХ ДАНИХ
+            </div>
+            <p>
+                16.1. Надаючи свої персональні дані при замовленні заказу на інтернет-сайті, Замовник дає свою
+                добровільну безвідкличну згоду на обробку і використання (у тому числі і передачу) своїх персональних
+                даних без обмеження терміну дії такої згоди відповідно до Закону України "Про захист персональних даних"
+                від 01.06.2010р.
+            </p>
+            <p>
+                16.2. ФОП та інтернет-сайт використовують отримані Персональні дані для цілей виконання доручення та
+                продажу Товарів і надання послуг, визначених цим Договором, для просування послуг, що надаються ФОП, у
+                тому числі і за допомогою автоматизованої обробки персональних даних.
+            </p>
+            <p>
+                16.3. ФОП та інтернет-сайт зобов'язуються не розголошувати отриману від Замовника інформацію. Не
+                вважається порушенням надання ФОП та інтернет-сайтом інформації агентам і третім особам, що діють на
+                підставі договору з ФОП, у тому числі і для виконання зобов'язань перед Замовником, а також у випадках,
+                коли розкриття такої інформації встановлене вимогами законодавства.
+            </p>
+            <p>
+                16.4. Якщо Замовник не бажає, щоб ФОП та інтернет-сайт продовжував обробляти персональні дані, то
+                Користувачеві необхідно звернутися із заявою в службу підтримки. В цьому випадку Замовник не зможе
+                продовжувати користуватися послугами Інтернет-сайта.
+            </p>
+            <p>
+                16.5. Замовник несе відповідальність за підтримку своїх персональних даних в актуальному стані. ФОП та
+                інтернет-сайт не несуть відповідальності за неякісне виконання або невиконання своїх зобов'язань у
+                зв'язку з неактуальністю інформації про Замовника або невідповідністю її дійсності
+            </p>
+        </div>
+    </div>
+</section>
+            <div class="floating-cart">
+    <svg>
+        <use xlink:href='img/svg/sprite.svg#cart'></use>
+    </svg>
+</div>
+            <section class="modal">
+    <div class="modal__overlay">
+        <div class="modal__window">
+            <h2 class="title">Оформление заказа</h2>
+            <div class="order-form">
+                <div class="order-form__right">
+                    <h3 class="title">
+                        Ваш заказ
+                    </h3>
+                        <div class="order-form__list" data-simplebar>
+                        </div>
+                    <div class="order-form__final-price">
+                        Сумма заказа: <span><span class="total-price">0</span> грн</span>
+                    </div>
+                </div>
+                <div class="order-form__left">
+                    <form class="order-form__form form" method="POST">
+                        <input type="hidden" name="admin_email[]" value="sergeyvasylenko4@gmail.com">
+                        <input type="hidden" name="form_subject" value="Заказ с магазина">
+                        <h3 class="title">
+                            Способ получения заказа
+                        </h3>
+                        <div class="form__item">
+                            <label class="form__radio-item form__item_courier">
+                                <input type="radio" name="Тип доставки" value="Курьер">
+                                <span>Курьером</span>
+                            </label>
+                            <label class="form__radio-item form__item_self">
+                                <input type="radio" name="Тип доставки" value="Самовывоз">
+                                <span>Самовывоз</span>
+                            </label>
+                        </div>
+                        <h3 class="title">
+                            Данные покупателя
+                        </h3>
+                        <div class="form__item">
+                            <div class="form__row">
+                                <input type="text" name="Имя" placeholder="Имя" required>
+                                <input type="text" name="Фамилия" placeholder="Фамилия" required>
+                            </div>
+                            <div class="form__row">
+                                <input type="tel" name="Телефон" placeholder="Телефон" required>
+                                <input class="additional" type="text" name="Адрес" placeholder="Адрес доставки">
+                            </div>
+                        </div>
+                        <h3 class="title">
+                            Способ оплаты
+                        </h3>
+                        <div class="form__item">
+                            <label class="form__radio-item form__item_cash">
+                                <input type="radio" name="Способ оплаты" value="Наличными">
+                                <span>Наличными при получении</span>
+                            </label>
+                            <label class="form__radio-item form__item_card">
+                                <input type="radio" name="Способ оплаты" value="Картой">
+                                <span>Картой при получении</span>
+                            </label>
+                        </div>
+                        <div class="btn">
+                            <button type="submit">Оформить заказ</button>
+                        </div>
+                    </form>
+                    <div class="order-form__policy">
+                        Нажимая кнопку "Оформить заказ", Вы соглашаетесь с <a href="#">политикой конфиденциальности</a>
+                        нашей компании.
+                    </div>
+                    <div class="order-form__tip">
+                        Весовой товар может не соответствовать выбранному весу на 10-40 грамм
+                    </div>
+                    <div class="order-form__tip">
+                        Поля обязательны для заполнения
+                    </div>
+                </div>
+            </div>
+            <button class="modal__close"></button>
+        </div>
+    </div>
+</section>
+        </main>
+        <!-- _______________________Основа сайта_______________________ -->
+        <footer class="footer">
+    <div class="container">
+        <div class="footer__wrapper">
+            <div class="footer__rights">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="img/decorations/logo-black.png" alt="Logo">
+                    </a>
+                </div>
+                <div class="footer__brend">
+                    © Everest 2020
+                </div>
+            </div>
+            <nav class="footer__nav">
+                <ul class="footer__list">
+                    <li class="footer__item"><a href="catalog.html" class="footer__link">Каталог</a></li>
+                    <li class="footer__item"><a href="#contacts" class="footer__link">Контакты</a></li>
+                    <li class="footer__item"><a href="delivery.html" class="footer__link">Доставка и оплата</a></li>
+                </ul>
+            </nav>
+            <div class="footer__credits">
+                <div class="footer__credits-item">
+                    <a href="#">
+                        Политика конфиденциальности
+                    </a>
+                </div>
+                <div class="footer__credits-item">
+                    <a href="#">
+                        Публичный договор оферты
+                    </a>
+                </div>
+            </div>
+            <div class="footer__phones">
+                <div class="footer__phone">
+                    <a href="tel:+380958045102">+38 (095) - 80 - 45 - 102</a>
+                </div>
+                <div class="footer__phone">
+                   <a href="tel:+380682204208">+38 (068) - 22 - 04 - 208</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+        <section class="cart">
+    <h4 class="cart__title">
+        Корзина
+    </h4>
+    <div class="cart__inner">
+        <div class="cart__empty">
+            <div class="cart__content">
+                <svg>
+                    <use xlink:href='img/svg/sprite.svg#cart'></use>
+                </svg>
+                <div>Корзина пустая</div>
+            </div>
+            <div class="btn">
+                <button>
+                    Вернуться к покупкам
+                </button>
+            </div>
+        </div>
+        <div class="cart__full">
+            <div class="cart__content" data-simplebar>
+            </div>
+            <div class="cart__purchase">
+                <div class="cart__final-price">
+                    Примерная сумма заказа: <span><span class="total-price">0</span> грн</span>
+                </div>
+                <div class="btn">
+                    <button href="#">
+                        Оформить заказ
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="cart__close"></button>
+</section>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
